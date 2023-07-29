@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/x-icon" href="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Tropa do Zaza</title>
+    <meta property="og:image" content="images/rlk_1.png">
+    <meta property="og:title" content="Tropa do Zaza">
+    <meta property="og:description" content="">
+    <script src="js/anime.min.js"></script>
+</head>
+<body>
+    <div class="entry-text" onclick="showContent()" id="entryText">
+        <div>
+            <img src="images/gatodomustangr.png" alt="Tropa do Zaza" class="Tropa do Zaza">
+        </div>
+    </div>
+
+    <div class="container" id="container">
+        <h1>Tropa do Zaza</h1>
+        <div class="member">
+            <div class="member-card honored">
+                <img src="images/matheus.png" alt="Foto do Membro 1" onclick="redirectToSite('https://discordapp.com/users/871392144793944104')">
+                <h3>Matheus</h3>
+                <p>Malandro & Webfudedor</p>
+            </div>
+
+            <div class="member-card">
+                <img src="images/7v.png" alt="7v" onclick="redirectToSite('https://discordapp.com/users/273941820281585665')">
+                <h3>7v</h3>
+                <p>Mineiro & Rico</p>
+            </div>
+
+            <div class="member-card">
+                <img src="images/Gutz.png" alt="Gutz" onclick="redirectToSite('https://discordapp.com/users/1115431412745646140')">
+                <h3>Gutz</h3>
+                <p>Carioca & Pedófilo</p>
+            </div>
+        </div>
+    </div>
+    <audio id="myAudio" loop>
+        <source src="media/Leviano_-Mc-Cabelinho-Sem-Compaixao.mp3" type="audio/mpeg">
+    </audio>
+
+    <script>
+        function showContent() {
+            var entryText = document.getElementById('entryText');
+            entryText.style.display = 'none';
+
+            var container = document.getElementById('container');
+            container.style.display = 'block';
+
+            var audio = document.getElementById('myAudio');
+            audio.play();
+        }
+
+        function redirectToSite(url) {
+            window.location.href = url;
+        }
+    </script>
+</body>
+</html>
